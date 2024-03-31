@@ -11,6 +11,21 @@ img {
 	width: 100%;
 }
 
+.owl-item > div {
+	cursor: pointer;
+	transition: transform 0.4s ease;
+	transform: scale(0.75);
+}
+
+.owl-item.center > div {
+	cursor: auto;
+	transform: scale(1);
+}
+
+.owl-item:not(.center) > div:hover {
+	opacity: .75;
+}
+
 .bg-theme {
 	background-color: #004686;
 }
@@ -247,7 +262,12 @@ img {
 		top: 0px;
 	}
 
-	.banner-img {
+	.mt-300px {
+		margin-top: 300px;
+	}
+
+	.banner-img {	
+		background-position: 35% center !important;
 		height: auto !important;
 	}
 
