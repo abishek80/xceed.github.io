@@ -1,0 +1,325 @@
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+img {
+	width: 100%;
+}
+
+.bg-theme {
+	background-color: #004686;
+}
+
+.text-theme {
+	color: #004686;
+}
+
+.bg-theme-green {
+	background-color: #778886;
+}
+
+.count-text {
+	font-size: 75px;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.sticky-div {
+	position: sticky;
+	top: 40%;
+}
+
+.title {
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 80px;
+}
+
+.fixed-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+}
+
+.fixed-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+}
+
+.background-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+}
+
+.section-gap {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+.banner-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.contact-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.banner-logo {
+	width: 125px;
+	height: 75px;
+	object-fit: contain;
+}
+
+.hexagon {
+	position: relative;
+	margin: 75px auto;
+	width: 310px;
+	height: 178px;
+	padding: 0px 10px 0px 10px;
+	background-color: transparent;
+	background-position: center center;
+	z-index: 1;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+}
+
+.hexagon .face1,
+.hexagon .face2,
+.hexagon .face3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+	z-index: -1;
+	/* Keeps borders smooth in webkit */
+	backface-visibility: hidden;
+}
+
+.hexagon .face1:before,
+.hexagon .face2:before,
+.hexagon .face3:before {
+	content: '';
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	background: inherit;
+}
+
+.hexagon .face1 {
+	transform: rotate(30deg);
+}
+
+.hexagon .face1:before {
+	left: 0;
+	transform-origin: left top;
+	transform: rotate(-60deg) translate(-110px, 0);
+}
+
+.hexagon .face2 {
+	transform: rotate(-30deg);
+}
+
+.hexagon .face2:before {
+	right: 0;
+	transform-origin: right top;
+	transform: rotate(60deg) translate(110px, 0);
+}
+
+.hexagon-p {
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.hexagon .face3 {
+	transform: rotate(-90deg);
+}
+
+.hexagon .face3:before {
+	right: 0;
+	transform-origin: right top;
+	transform: rotate(60deg) translate(110px, 0);
+}
+
+.min-h-750 {
+	min-height: 700px;
+}
+
+.position-1 {
+	position: absolute;
+    top: 25px;
+    left: 13%;
+    /* transform: translate(-50%, 0); */
+}
+
+.position-2 {
+	position: absolute;
+	top: 180px;
+    left: 39%;
+    /* transform: translate(-50%, 0); */
+}
+
+.position-3 {
+	position: absolute;
+	top: 335px;
+    left: 65%;
+}
+
+.loader-logo {
+	width: 300px; /* Adjust as needed */
+	height: 100px; /* Adjust as needed */
+    object-fit: contain;
+	transition: all 1.5s; /* Smooth transition */
+}
+
+.loader-logo.shrink {
+	width: 150px; /* Adjust as needed */
+	height: 100px; /* Adjust as needed */
+	object-fit: contain;
+	transform: translate(0px, -300%);
+}
+
+@keyframes shrinkAnimation {
+	from {
+		/* Define initial size */
+		transform: scale(1);
+	}
+	to {
+		/* Define final size */
+		transform: scale(0.5);
+	}
+}
+
+.getInTouch {
+	color: #000;
+	background-color: #fff;
+	box-shadow: 2px 2px 5px #8f8f8f;
+}
+
+.w-lg-75 {
+	width: 75%;
+}
+
+@media screen and (max-width: 991px) {
+	.position-1 {
+		position: relative !important;
+		left: -100px;
+		top: 20px;
+	}
+
+	.position-2 {
+		position: relative !important;
+		left: 150px;
+		top: 0px;
+	}
+
+	.position-3 {
+		position: relative !important;
+		left: -90px;
+		top: 0px;
+	}
+
+	.banner-img {
+		height: auto !important;
+	}
+
+	.min-h-750 {
+		min-height: auto !important;
+	}
+
+	.hexagon-p {
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	.loader-logo.shrink {
+		transform: translate(-30%, -300%);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.position-1 {
+		position: unset !important;
+		margin-top: 120px;
+	}
+
+	.w-lg-75 {
+		width: 100%;
+	}
+
+	.hexagon-p {
+		font-size: 13px !important;
+		font-weight: 500 !important;
+	}
+	
+	.fixed-image {
+		height: auto !important;
+	}
+	
+	.hexagon {
+		width: 280px !important;
+		height: 162px !important;
+	}
+	
+	.contact-img {
+		background-position: right !important;
+	}
+
+	.position-2 {
+		position: unset !important;
+		margin-top: 160px;
+	}
+
+	.position-3 {
+		position: unset !important;
+		margin-top: 160px;
+	}
+
+	.title {
+		font-size: 35px !important;
+		line-height: 40px;
+	}
+}
+
+.page-loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: #778886;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
